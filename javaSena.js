@@ -64,3 +64,12 @@ if (nota >=8.6 && nota == 10.0) {
 } else if (nota >=0 && nota == 4.9) {
     document.write(`Su nota es MUY BAJA, reprobo la materia sin posibilidad de plan de mejoramiento D:`)
 }
+
+// Si lo lees sos re gei pa 
+
+// skdkasd
+// asdasd
+// adsdasda
+
+// adsadasd
+// dasdada
