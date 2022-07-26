@@ -26,12 +26,12 @@ var c = Math.floor(Math.random() * 100)
 
 console.log(`${a}, ${b}, ${c}`)
 
-if (a==b && a==c) {
+if (a == b && a == c) {
     console.log(`Los 3 numeros son iguales`)
-} else if (a==b || a==c || b == c) {
+} else if (a == b || a == c || b == c) {
     console.log(`Hay dos numeros iguales`)
 
-} else console.log (`los 3 numeros son distintos`)
+} else console.log(`los 3 numeros son distintos`)
 
 
 // Ejercicio 3: Pedir un número entre 0 y 9.999 y decir cuantas cifras tiene. Cuando el número exceda los límites emita un mensaje y finalice el programa
@@ -41,35 +41,56 @@ let numero = parseInt(prompt(`Digite un numero no superior a 9999`))
 let contador = 0;
 if (numero > 9999) {
     alert(`El numero ${numero} es superior a 9999`)
-} else while (numero >=1 && numero<=9999) {
-    contador = contador +1 
-    numero = (numero / 10) 
+} else while (numero >= 1 && numero <= 9999) {
+    contador = contador + 1
+    numero = (numero / 10)
 }
 document.write(`El numero tiene ${contador} digitos <br>`)
 
 // Ejercicio 4: Pedir una nota de 0 a 10 y mostrarla de la forma: Insuficiente, Suficiente, Bien, etc. Use la escala que prefiera, pero cerciórese que tiene 5 valores
 
-let nota = parseFloat(prompt(`Digite su nota para saber si aprobo o no ` ))
+var notas;
+console.log("1-Su nota esta entre 8.6 y 10");
+console.log("2-Su nota esta entre 8.1 y 8.5");
+console.log("3-Su nota esta entre 7.5 y 8.4");
+console.log("4-Su nota esta entre 6.5 y 7.4");
+console.log("5-Su nota esta entre 1 y 6.4");
+console.log("6-Salir")
+notas = 5;
 
-if (nota >=8.6 && nota == 10.0) {
-    document.write(`Su nota es SUPERIOR, aprobo la materia con honores :D`)
-} else if (nota >=8.1 && nota == 8.5) {
-    document.write(`Su nota es ALTA, aprobo la materia felicitaciones :D`)
-} else if (nota >=7.5 && nota == 8.0){
-    document.write(`Su nota es ACEPTABLE, aprobo la materia pero puede mejorar`)
-} else if (nota >=6.5 && nota == 7.9){
-    document.write(`Su nota es BASICA, aprobo pero debe mejorar`)
-} else if (nota >=5 && nota == 6.4){
-    document.write(`Su nota es BAJA, debe presentar plan de mejoramiento para aprobar D:`)
-} else if (nota >=0 && nota == 4.9) {
-    document.write(`Su nota es MUY BAJA, reprobo la materia sin posibilidad de plan de mejoramiento D:`)
+switch (notas) {
+    case 1:
+        console.log(`Su nota es superior`);
+        break;
+    case 2:
+        console.log(`Su nota es alta`);
+        break;
+    case 3:
+        console.log(`Su nota es promedio`);
+        break;
+    case 4:
+        console.log("Su nota es baja");
+        break;
+    case 5:
+        console.log("Reprobo la asignatura");
+        break;
+    case 6:
+        console.log("Suerte es que le digo");
+        break;
+
+    default:
+        console.log("ERROR");
+        break;
 }
 
-// Si lo lees sos re gei pa 
+        // //Ejercicio 5: En un juego de preguntas a las que se responde “Si” o “No” gana quien responda correctamente las tres preguntas. Si se responde mal a cualquiera de
+// ellas ya no se pregunta la siguiente y termina el juego. Las preguntas son: 
+// 1. Colon descubrió América?
+// 2. La independencia de Colombia fue en el año 1810?
+// 3. The Doors fue un grupo de rock Americano?
 
-// skdkasd
-// asdasd
-// adsdasda
 
-// adsadasd
-// dasdada
+//Si alguien ve este ayudeme porque me colgue aqui y tengo que hacer otros 5 ksajfjasd 
+
+
+
