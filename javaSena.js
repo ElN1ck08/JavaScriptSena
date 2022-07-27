@@ -56,7 +56,7 @@ console.log("3-Su nota esta entre 7.5 y 8.4");
 console.log("4-Su nota esta entre 6.5 y 7.4");
 console.log("5-Su nota esta entre 1 y 6.4");
 console.log("6-Salir")
-notas = 5;
+notas = 6;
 
 switch (notas) {
     case 1:
