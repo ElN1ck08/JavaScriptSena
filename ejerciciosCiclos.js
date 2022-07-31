@@ -50,7 +50,21 @@ for (let conta = 1; conta<=c/2; conta++) {
         } else console.log(`El numero ${c} no es perfecto`)
     } 
 }
-
 // 4. Determinar cuales y cuantos números perfectos hay entre 1 y 1000?
 
+var nm = 1000
+var sd = 0 
+var npf = 0
 
+for (let d = 1; d<=nm; d+=1) {
+    for (let e = 1; e<d; e+=1) {
+        if (d % e == 0) {
+            sd += e     
+        }
+        if (sd == d)
+        console.log(`El numero ${d} es perfecto`)
+        npf += 1 
+    }
+    sd = 0
+}
+console.log(`Hay ${npf} cantidad de numeros perfectos`)
