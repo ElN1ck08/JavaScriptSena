@@ -35,3 +35,6 @@ var dvNd = numeros.numerador1 * numeros.denominador2
 var dvDn = numeros.denominador2 * numeros.numerador2
 
 console.log (`La division de los numeros es: ${dvNd}/${dvDn}`)
+
+
+// NO SIMPLIFICAAAA HPTA :c 
