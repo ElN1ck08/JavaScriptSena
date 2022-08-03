@@ -29,3 +29,9 @@ var mpNn = numeros.numerador1 * numeros.numerador2
 var mpDd = numeros.denominador1 * numeros.denominador2
 
 console.log (`El resultado de la multiplicacion de los numeros es: ${mpNn}/${mpDd}`)
+
+// DIVISION DE NUMEROS FRACCIONARIOS 
+var dvNd = numeros.numerador1 * numeros.denominador2
+var dvDn = numeros.denominador2 * numeros.numerador2
+
+console.log (`La division de los numeros es: ${dvNd}/${dvDn}`)
