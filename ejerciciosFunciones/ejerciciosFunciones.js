@@ -71,3 +71,4 @@ let sal = () => {
         contador3 = 40 * 2600 + horasEx * 5000
         return (`Su salario es de ${contador3}`)
 }
+
