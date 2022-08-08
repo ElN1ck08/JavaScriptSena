@@ -85,8 +85,6 @@ switch (notas) {
 
 
 
-// Mi mama me quiere mucho :D 
-
 
 
 

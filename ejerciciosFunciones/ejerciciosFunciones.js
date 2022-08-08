@@ -46,7 +46,28 @@ function cifras() {
         contador1 = contador1 + 1
         numero3 = (numero3 / 10)
     }
-    console.log(`El numero tiene ${contador1} digitos`)
+    return `El numero tiene ${contador1} digitos`
 
 }
+const cif = cifras
+console.log (cif)
+
+
+// EJERCICIO 4: Un obrero necesita calcular su salario semanal, el cual se obtiene de la sig. manera:
+// Si trabaja 40 horas o menos se le paga $2600 por hora
+// Si trabaja más de 40 horas se le paga $2600 por cada una de las primeras 40 horas y $5000 por cada hora extra FUNCION FLECHA 
+
+var numeros4 = 41
+var contador2 = 0
+var contador3 = 0
+if (numeros4 <=40){
+        contador2 = numeros4 * 2600 
+        console.log(`Su salario es de ${contador2}`)
+
+} else (numeros4 > 41)
+        contador2 = numeros4 * 2600 
+        contador3 = contador2 + 5000
+        console.log(`Su salario es de ${contador3}`)
+    
+
 
