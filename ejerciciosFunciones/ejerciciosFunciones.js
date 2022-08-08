@@ -17,6 +17,8 @@ numeros.forEach(function medio(){
     } else console.log(`El numero del medio es: ${numeros [2]}`)
 })
 
+console.log(medio())
+
 // EJERCICIO 2: Escribe un programa que pida tres números y que escriba si son los tres iguales, si hay dos iguales o si son los tres distintos CONVERTIDO A FUNCION FLECHA
 
 var numeros2 = [Math.floor(Math.random() * 100), Math.floor(Math.random() * 100), Math.floor(Math.random() * 100)]
@@ -31,6 +33,8 @@ numeros2.forEach((igu) => {
     
     } else console.log(`los 3 numeros son distintos`)
 })
+
+console.log(igu())
 
 // EJERCICIO 3: Pedir un número entre 0 y 9.999 y decir cuantas cifras tiene. Cuando el número exceda los límites emita un mensaje y finalice el programa CONVERTIDO A FUNCION CLASICA 
 
@@ -49,8 +53,7 @@ function cifras() {
     return `El numero tiene ${contador1} digitos`
 
 }
-const cif = cifras
-console.log (cif)
+console.log (cifras())
 
 
 // EJERCICIO 4: Un obrero necesita calcular su salario semanal, el cual se obtiene de la sig. manera:
@@ -69,6 +72,9 @@ let sal = () => {
     
     } else (horasEx = numeros4 - 40)
         contador3 = 40 * 2600 + horasEx * 5000
+       
         return (`Su salario es de ${contador3}`)
 }
+
+console.log (sal())
 
