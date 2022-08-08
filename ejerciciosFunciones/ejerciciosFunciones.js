@@ -57,17 +57,17 @@ console.log (cif)
 // Si trabaja 40 horas o menos se le paga $2600 por hora
 // Si trabaja más de 40 horas se le paga $2600 por cada una de las primeras 40 horas y $5000 por cada hora extra FUNCION FLECHA 
 
-var numeros4 = 41
+var numeros4 = 10
 var contador2 = 0
 var contador3 = 0
-if (numeros4 <=40){
-        contador2 = numeros4 * 2600 
-        console.log(`Su salario es de ${contador2}`)
+var horasEx = 0
 
-} else (numeros4 > 41)
+let sal = () => {
+    if (numeros4 <=40 ) {
         contador2 = numeros4 * 2600 
-        contador3 = contador2 + 5000
-        console.log(`Su salario es de ${contador3}`)
+        return(`Su salario es de ${contador2}`)
     
-
-
+    } else (horasEx = numeros4 - 40)
+        contador3 = 40 * 2600 + horasEx * 5000
+        return (`Su salario es de ${contador3}`)
+}
