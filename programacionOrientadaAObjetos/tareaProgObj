@@ -1,0 +1,65 @@
+class cuentaBancaria {
+    constructor (noCuenta, noTarjeta, nombreTitu, saldo) {
+        this._noCuenta= noCuenta;
+        this._noTarjeta = noTarjeta;
+        this._nombreTitu = nombreTitu;
+        this._saldo = saldo;
+    }
+            set noCuenta (noCuenta) {
+                this._noCuenta = noCuenta
+        }
+            set noTarjeta (noTarjeta) {
+                this._noTarjeta = noTarjeta
+            }
+            set nombreTitu (nombreTitu) {
+                this._nombreTitu = nombreTitu
+            }
+            set saldo (saldo) {
+                this._saldo = saldo
+            }
+            get noCuenta (){
+                return this.noCuenta
+            }
+            get noTarjeta (){
+                return this.noTarjeta
+            }
+            get nombreTitu (){
+                return this.nombreTitu
+            }
+            get saldo () {
+                return this.saldo
+            }
+}
+
+let miCuenta = new cuentaBancaria (31254, 223344, `Nicolas Escolar`, 10 ) 
+
+class cuentaDeAhorros extends cuentaBancaria {
+    constructor (noCuenta, noTarjeta, nombreTitu, saldo, tasaInter, nuevoBalance) {
+        super (noCuenta, noTarjeta, nombreTitu, saldo)
+        this._tasaInter = tasaInter 
+        this._nuevoBalance = nuevoBalance
+    }
+    set tasaInter (tasaInter) {
+        this._tasaInter = tasaInter
+    }
+
+    set nuevoBalance (nuevoBalance) {
+        this._nuevoBalance = nuevoBalance
+    }
+    get tasaInter (){
+        return this.tasaInter
+    }
+    get nuevoBalance (){
+        return this.nuevoBalance
+    }
+
+    cuentaNueva (){
+        return `${this._tasaInter, $this._nuevoBalance}
+                ${this._noCuenta}, ${this._noTarjeta}, ${this._nombreTitu}, ${this._saldo}`
+    }
+
+}
+
+const cH = new cuentaDeAhorros (3125, 2233, `Adriano Corleone`, 70000, 0.01, 73000)
+console.log (cH)
+
