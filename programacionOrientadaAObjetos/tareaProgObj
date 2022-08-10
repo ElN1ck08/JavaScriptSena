@@ -60,6 +60,39 @@ class cuentaDeAhorros extends cuentaBancaria {
 
 }
 
-const cH = new cuentaDeAhorros (3125, 2233, `Adriano Corleone`, 70000, 0.01, 73000)
+const cH = new cuentaDeAhorros (3125, 2233, `Adriano Corleone`, 70000, 0.01, 79300)
 console.log (cH)
 
+
+// SEGUNDO PUNTO 
+
+class Poligono{
+    constructor(lados,base,altura){
+        this.lados = lados;
+        this.base = base;
+        this.altura = altura;
+    }
+
+    area(a,b){
+        this._base=b;
+        this._altura=a;
+        var area = Math.pow(a*b,2);          
+        return area
+    }
+
+    permietro(a+b+c){
+
+    }
+};
+
+let obj1 = new Poligono(2,3,2);
+console.log(`La base es:${obj1.base}, La altura es: ${obj1.altura}`);
+console.log(`La base por la altura al cuadrado es: ${obj1.area(3,2)}`);
+
+class Cuadrado extends Poligono{
+
+    constructor(){
+        super(this._lados,this.base,this.altura);   
+    }
+
+};
