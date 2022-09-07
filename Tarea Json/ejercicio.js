@@ -72,3 +72,8 @@ fs.writeFile(`ejercicio.json`, personaNueva, (error)=>{
 
 //Para comprobar que fucniono correctamente abrimos el terminal y escribimos node y el nombre del archivo en este caso es ejercicio.js
 
+//Para recorrer los objetos en json se utiliza el for de la siguiente manera 
+
+for (M in ejercicio){
+    console.log(ejercicio[M])
+}
