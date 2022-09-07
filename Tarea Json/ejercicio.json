@@ -1,0 +1,23 @@
+[
+    {
+        "nombre": "Nicolas",
+        "apellido": "Escolar",
+        "edad": 18,
+        "apodo": "Chata"
+    },
+
+    {
+        "nombre": "Julian",
+        "apellido": "Betancourt",
+        "edad": 19,
+        "apodo": false 
+    },
+
+    {
+        "nombre": "Juan",
+        "apellido": "Ruidiaz",
+        "edad": 17, 
+        "apodo": "Juanito"
+    }
+
+]
